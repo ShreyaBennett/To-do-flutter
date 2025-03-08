@@ -22,28 +22,27 @@ class _SplashScreenState extends State<SplashScreen> {
           
           Flexible(
             child: Container(
-              width: 500.0, 
-              height: 500.0, 
+              // width: 500.0, 
+              // height: 500.0, 
+              width: MediaQuery.of(context).size.width * 0.9,  
+              height: MediaQuery.of(context).size.height * 0.7,
               child: Lottie.asset(
-                'assets/to do Animation.json', 
+                'assets/todo_animation.json', 
                 repeat: true,
                 fit: BoxFit.cover, 
               ),
             ),
           ),
-          const SizedBox(height: 10.0), 
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.0), 
-          child:  Text(
-              "Achieve your goals through \n to-do-list",
+          // const SizedBox(height: 10.0), 
+          Text(
+              "Plant your tasks, grow your achievements",
               style: TextStyle(
-                fontSize: 24, 
+                fontSize: 20, 
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
               textAlign: TextAlign.center,
             ),
-          ),
         ],
       ),
       nextScreen: const ToDoList(), 

@@ -44,9 +44,9 @@ class todo2 extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 20.0),
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: taskCompleted
-                  ? [Colors.grey.shade400, Colors.grey.shade600]
-                  : [ColorTheme.customYellow, ColorTheme.customPurple],
+              colors: 
+                  // [Colors.grey.shade400, Colors.grey.shade600]
+                   [ColorTheme.customYellow, ColorTheme.customPurple],
             ),
             borderRadius: BorderRadius.circular(20.0),
             boxShadow: [
@@ -103,6 +103,7 @@ Widget NameTextField() {
   return Padding(
     padding: const EdgeInsets.all(20.0),
     child: TextField(
+      
       style: TextStyle(
         color: Colors.black,
         fontSize: 16.0,

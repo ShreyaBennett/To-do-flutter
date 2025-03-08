@@ -18,6 +18,7 @@ class toDoDialogBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
+      title: Text("New Task!"),
       backgroundColor: Colors.grey.shade300,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20.0)
